@@ -35,16 +35,4 @@
 
 ## Depends on:
 
-> <a href="https://github.com/Galacticai/GalacticLib.Math" >
->     <img
->         alt="GalacticLib.Math" 
->         src="https://img.shields.io/badge/GalacticLib-Math-informational" 
->     />
-> </a>
-> @
-> <a href="https://nuget.org/packages/GalacticLib.Math" >
->     <img
->         alt="Nuget Package"
->         src="https://buildstats.info/nuget/GalacticLib.Math"
->     />
-> </a>
+> (None)
