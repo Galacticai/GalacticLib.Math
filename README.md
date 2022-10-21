@@ -11,7 +11,7 @@
 <a href="https://nuget.org/packages/GalacticLib.Math" >
     <img
         height=28
-        alt="Nugget Package"
+        alt="Nuget Package"
         src="https://buildstats.info/nuget/GalacticLib.Math"
     />
 </a>
