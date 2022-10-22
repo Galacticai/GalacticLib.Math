@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+/// —————————————————————————————————————————————
 //? 
 //!? 📜 Cube.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -32,7 +32,7 @@ namespace GalacticLib.Math.Space3D {
 
         public Cube(double x, double y, double z, double length)
                     : base(x, y, z, length, length, length) { }
-        public Cube(Point point, double length)
-                    : base(point, length, length, length) { }
+        public Cube(Point position, double length)
+                    : base(position, length, length, length) { }
     }
 }
