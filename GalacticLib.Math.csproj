@@ -10,6 +10,7 @@
     <Title>GalacticLib (Math)</Title>
 	<Copyright>©2022 Galacticai</Copyright>
     <PackageProjectUrl>https://github.com/Galacticai/GalacticLib.Math</PackageProjectUrl>
+    <PackageRepositoryUrl>https://github.com/Galacticai/GalacticLib.Math</PackageRepositoryUrl>
     <PackageTags>Galacticai;GalacticLib;Lib;Library;Math;Mathematics;</PackageTags>
     <NeutralLanguage>en-001</NeutralLanguage>
 	<Authors>Galacticai</Authors>
