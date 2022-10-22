@@ -2,8 +2,8 @@ using System;
 
 namespace GalacticLib.Math.Numerics {
     public static class Range_Extension {
-        public static double AtOrBetween(this double value, Range range)
-            => value.AtOrBetween(range.Min, range.Max);
+        public static double AtOrBetween(this double input, Range range)
+            => input.AtOrBetween(range.Min, range.Max);
         public static double AtOrBetween(this double input, double min, double max) {
             if (input > max) return max;
             if (input < min) return min;
