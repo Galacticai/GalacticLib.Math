@@ -26,17 +26,16 @@ namespace GalacticLib.Math.Numerics {
         #endregion
         #region Methods
 
-        /// <summary> <paramref name="value"/> but forced inside this <see cref="Range"/> </summary>
-        public double AtOrBetween(double value)
-            => value.AtOrBetween(Min, Max);
+        public double AtOrBetween(double input)
+            => input.AtOrBetween(Min, Max);
 
-        public double GetRatio(double value) {
+        public double GetRatio(double input) {
             //? Try catch because double==double is never precise
             //? (can't detect division by zero beforehand)
             try {
-                return (value - Min) / (Max - Min);
+                return (input - Min) / (Max - Min);
             } catch { //(System.DivideByZeroException divideByZeroExceptiion) {
-                return value > End ? 1 : 0;
+                return input > End ? 1 : 0;
             }
         }
 
