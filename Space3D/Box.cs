@@ -49,7 +49,7 @@ namespace GalacticLib.Math.Space3D {
 
         public virtual double Volume
             => XLength * YLength * ZLength;
-        public BoxPoints Points
+        public BoxCorners Points
             => new(this);
 
         public Box(double x, double y, double z, double xLength, double yLength, double zLength) {

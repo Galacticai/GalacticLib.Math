@@ -45,7 +45,7 @@ namespace GalacticLib.Math.Space2D {
 
         public double Area
             => XLength * YLength;
-        public RectanglePoints Points
+        public RectangleCorners Points
             => new(this);
 
         public Rectangle(double x, double y, double xLength, double yLength) {
