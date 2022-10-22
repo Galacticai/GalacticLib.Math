@@ -40,8 +40,8 @@ namespace GalacticLib.Math.Numerics {
             }
         }
 
-        public double GetPercent(double percent)
-            => GetRatio(percent) * 100;
+        public double GetPercent(double input)
+            => GetRatio(input) * 100;
 
         /// <summary> Union of this <see cref="Range"/> with another <paramref name="range"/> </summary>
         /// <returns> new <see cref="Range"/> spanning both ranges </returns>
