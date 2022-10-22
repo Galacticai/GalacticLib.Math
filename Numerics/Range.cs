@@ -72,7 +72,7 @@ namespace GalacticLib.Math.Numerics {
 
 
         public override string ToString()
-            => $"{Min}_{Max}";
+            => $"{Min}~{Max}";
         public override int GetHashCode()
             => HashCode.Combine(Min, Max);
         public override bool Equals(object? obj) {
