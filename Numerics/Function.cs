@@ -1,17 +1,18 @@
-﻿/// —————————————————————————————————————————————
+﻿// —————————————————————————————————————————————
 //? 
 //!? 📜 Function.cs
 //!? 🖋️ Galacticai 📅 2022
 //!  ⚖️ GPL-3.0-or-later
 //?  🔗 Dependencies: No special dependencies
 //? 
-/// —————————————————————————————————————————————
+// —————————————————————————————————————————————
 
 using sMath = System.Math;
 
 namespace GalacticLib.Math.Numerics {
     /// <summary> Predefined mapping functions </summary>
     public static class Function {
+        /// <summary> Function name </summary>
         public enum FunctionName {
             //? t     /
             //? |   /
@@ -46,6 +47,12 @@ namespace GalacticLib.Math.Numerics {
             SmoothMiddle_FTF
 
         }
+        /// <summary> Run the target <see cref="FunctionName"/> to find ƒ(<paramref name="x"/>) </summary>
+        /// <param name="function"> Target <see cref="FunctionName"/> </param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
+        /// <returns> ƒ(<paramref name="x"/>) </returns>
         public static double Fx(FunctionName function, double x, double from, double to)
             => function switch {
                 FunctionName.Smooth_FT => Smooth_FT(x, from, to),
@@ -74,7 +81,9 @@ namespace GalacticLib.Math.Numerics {
         /// </c>
         /// </list>
         /// </summary>
-        /// <param name="x">input</param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
         /// <returns> <c> ƒ(𝑥) = 𝑥 </c> </returns> 
         public static double Linear_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
@@ -98,7 +107,9 @@ namespace GalacticLib.Math.Numerics {
         /// </list>
         /// <br/> Note: <c> d = t - f </c>
         /// </summary>
-        /// <param name="x">input</param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
         /// <returns> <c> ƒ(𝑥) = ((-d•𝒄𝒐𝒔(π(𝑥 - f)/d)) + t + f) / 2 </c> </returns> 
         public static double Smooth_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
@@ -123,7 +134,9 @@ namespace GalacticLib.Math.Numerics {
         /// </list>
         /// <br/> Note: <c> d = t - f </c>
         /// </summary>
-        /// <param name="x">input</param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
         /// <returns> <c> ƒ(𝑥) = -d•𝒄𝒐𝒔(π(x - f) / 2d) + t </c> </returns>
         public static double SmoothStart_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
@@ -148,7 +161,9 @@ namespace GalacticLib.Math.Numerics {
         /// </list>
         /// <br/> Note: <c> d = t - f </c>
         /// </summary>
-        /// <param name="x">input</param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
         /// <returns> <c> ƒ(𝑥) = d•𝒔𝒊𝒏(π(𝑥 - f)/2d) + f </c> </returns>
         public static double SmoothEnd_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
@@ -173,7 +188,9 @@ namespace GalacticLib.Math.Numerics {
         /// </list>
         /// <br/> Note: <c> d = t - f </c>
         /// </summary>
-        /// <param name="x">input</param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
         /// <returns> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c></returns> 
 
         public static double Smooth_FTF(double x, double from, double to) {
@@ -199,7 +216,9 @@ namespace GalacticLib.Math.Numerics {
         /// </list>
         /// <br/> Note: <c> d = t - f </c>
         /// </summary>
-        /// <param name="x">input</param>
+        /// <param name="x"> Input </param>
+        /// <param name="from"> Starting boundary </param>
+        /// <param name="to"> Ending boundary </param>
         /// <returns> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c></returns> 
         public static double SmoothMiddle_FTF(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t

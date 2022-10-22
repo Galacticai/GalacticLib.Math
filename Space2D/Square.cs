@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+﻿// —————————————————————————————————————————————
 //? 
 //!? 📜 Square.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -7,16 +7,20 @@
 //      + (Galacticai) Math/Space2D/Point.cs
 //      + (Galacticai) Math/Space2D/Rectangle.cs
 //? 
-/// —————————————————————————————————————————————
+// —————————————————————————————————————————————
 
 
-namespace GalacticLib.Math.Space2D {
-    internal class Square : Rectangle {
+namespace GalacticLib.Math.Space2D
+{
+    internal class Square : Rectangle
+    {
         private new readonly double XLength, YLength;
 
-        public double Length {
+        public double Length
+        {
             get => base.XLength;
-            set {
+            set
+            {
                 base.XLength = value;
                 base.YLength = value;
             }
