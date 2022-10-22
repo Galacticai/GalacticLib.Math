@@ -39,7 +39,7 @@ namespace GalacticLib.Math.Space3D {
         //TODO: TEST Sphere.howClose(Point)
         /// <returns> Ratio of how close <paramref name="point"/> is to <see cref="Center"/>
         /// relative to <see cref="Radius"/> </returns>
-        public double howClose(Point point) {
+        public double HowClose(Point point) {
             double distance = Center.Distance(point);
             //? close 0 -- 1 far
             double ratio_inverse = distance / Radius;
