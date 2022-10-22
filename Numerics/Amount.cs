@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+/// —————————————————————————————————————————————
 //? 
 //!? 📜 Amount.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -45,7 +45,7 @@ namespace GalacticLib.Math.Numerics {
             => Value.ToString();
         public override int GetHashCode()
             => HashCode.Combine(Value, Range);
-        public override bool Equals(object obj) {
+        public override bool Equals(object? obj) {
             if (obj is not Amount other) return false;
             return Value == other.Value && Range.Equals(other.Range);
         }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 /// —————————————————————————————————————————————
 //? 
 //!? 📜 Range.cs
@@ -75,7 +75,7 @@ namespace GalacticLib.Math.Numerics {
             => $"{Min}_{Max}";
         public override int GetHashCode()
             => HashCode.Combine(Min, Max);
-        public override bool Equals(object obj) {
+        public override bool Equals(object? obj) {
             if (obj is not Range other) return false;
             return Min == other.Min && Max == other.Max;
         }
