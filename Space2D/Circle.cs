@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+/// —————————————————————————————————————————————
 //?
 //!? 📜 Circle.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -21,8 +21,8 @@ namespace GalacticLib.Math.Space2D {
         public bool OnPoint(Point point)
             => Center.Distance(point) == Radius;
 
-        public double Distance_Center(Circle sphere)
-            => Center.Distance(sphere.Center);
+        public double Distance_Center(Circle circle)
+            => Center.Distance(circle.Center);
 
         /// <returns>
         ///     <list type="bullet">
@@ -31,11 +31,11 @@ namespace GalacticLib.Math.Space2D {
         ///     <item> &lt;0 • Intersecting </item>
         ///     </list>
         /// </returns>
-        public double Distance_Edge(Circle sphere)
-            => Distance_Center(sphere) - (Radius + sphere.Radius);
+        public double Distance_Edge(Circle circle)
+            => Distance_Center(circle) - (Radius + circle.Radius);
 
-        public bool IntersectsSphere(Circle sphere)
-           => Distance_Edge(sphere) <= 0;
+        public bool IntersectsSphere(Circle circle)
+            => Distance_Edge(circle) <= 0;
 
         //TODO: TEST Circle.howClose(Point)
         /// <returns> Ratio of how close <paramref name="point"/> is to <see cref="Center"/>
