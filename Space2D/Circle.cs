@@ -14,7 +14,7 @@ using sMath = System.Math;
 
 namespace GalacticLib.Math.Space2D {
     internal class Circle {
-        public static readonly Circle UNIT_SPHERE = new(Point.ORIGIN, 1);
+        public static readonly Circle UNIT_CIRCLE = new(Point.ORIGIN, 1);
 
         public bool IncludesPoint(Point point)
             => Center.Distance(point) <= Radius;
