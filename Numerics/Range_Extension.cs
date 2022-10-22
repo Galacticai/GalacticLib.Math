@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace GalacticLib.Math.Numerics {
     public static class Range_Extension {
@@ -23,6 +23,8 @@ namespace GalacticLib.Math.Numerics {
 
         public static bool IsBetween(this double input, double min, double max)
             => input >= min && input <= max;
+        public static bool IsBetween(this double input, Range range)
+            => input.IsBetween(range.Min, range.Max);
 
 
         public static float AtOrBetween(this float value, Range range)
@@ -46,6 +48,8 @@ namespace GalacticLib.Math.Numerics {
 
         public static bool IsBetween(this float input, float min, float max)
             => input >= min && input <= max;
+        public static bool IsBetween(this float input, Range range)
+            => input.IsBetween(Convert.ToSingle(range.Min), Convert.ToSingle(range.Max));
 
 
         public static int AtOrBetween(this int value, Range range)
@@ -69,5 +73,7 @@ namespace GalacticLib.Math.Numerics {
 
         public static bool IsBetween(this int input, int min, int max)
             => input >= min && input <= max;
+        public static bool IsBetween(this int input, Range range)
+            => input.IsBetween(Convert.ToInt32(range.Min), Convert.ToInt32(range.Max));
     }
 }
