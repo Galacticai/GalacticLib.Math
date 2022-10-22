@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+/// —————————————————————————————————————————————
 //?
 //!? 📜 Sphere.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -17,7 +17,7 @@ namespace GalacticLib.Math.Space3D {
 
         public bool IncludesPoint(Point point)
             => Center.Distance(point) <= Radius;
-        public bool OnPoint(Point point)
+        public bool PassThroughPoint(Point point)
             => Center.Distance(point) == Radius;
 
         public double Distance_Center(Sphere sphere)
