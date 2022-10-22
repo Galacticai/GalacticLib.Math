@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+/// —————————————————————————————————————————————
 //?
 //!? 📜 Rectangle.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -54,8 +54,8 @@ namespace GalacticLib.Math.Space2D {
             XLength = sMath.Abs(xLength);
             YLength = sMath.Abs(yLength);
         }
-        public Rectangle(Point point, double xLength, double yLength)
-                    : this(point.X, point.Y, xLength, yLength) { }
+        public Rectangle(Point position, double xLength, double yLength)
+                    : this(position.X, position.Y, xLength, yLength) { }
         public Rectangle(Point point1, Point point2)
                     : this(point1.X, point1.Y,
                           sMath.Max(point1.X, point2.X) - sMath.Min(point1.X, point2.X),

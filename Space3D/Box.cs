@@ -1,4 +1,4 @@
-﻿/// —————————————————————————————————————————————
+/// —————————————————————————————————————————————
 //?
 //!? 📜 Box.cs
 //!? 🖋️ Galacticai 📅 2022
@@ -60,8 +60,8 @@ namespace GalacticLib.Math.Space3D {
             YLength = yLength.Positive();
             ZLength = zLength.Positive();
         }
-        public Box(Point point, double xLength, double yLength, double zLength)
-                    : this(point.X, point.Y, point.Z,
+        public Box(Point position, double xLength, double yLength, double zLength)
+                    : this(position.X, position.Y, position.Z,
                           xLength, yLength, zLength) { }
         public Box(Point point1, Point point2)
                     : this(point1.X, point1.Y, point1.Z,
