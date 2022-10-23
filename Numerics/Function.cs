@@ -18,97 +18,79 @@ namespace GalacticLib.Math.Numerics {
             //? |   /
             //? | /
             //? f一一一t
-            /// <summary>
-            /// <list>
-            /// <c>
+            /// <summary> <list> <c>
             /// <item>⠀⠀⠀t⠀⠀⠀⠀⠀/  </item>
             /// <item>⠀⠀⠀:⠀⠀⠀/     </item>
             /// <item>⠀⠀⠀:⠀/       </item>
             /// <item>⠀⠀⠀f 一一一 t </item>
-            /// </c>
-            /// </list>
-            /// </summary>
+            /// </c> </list>
+            /// <br/> <c> ƒ(𝑥) = 𝑥 </c> </summary>
             Linear_FT,
             //? t    .-
             //? |   /
-            //? | _-
+            //? | _'
             //? f一一一t
-            /// <summary>
-            /// <list>
-            /// <c>
+            /// <summary> <list> <c>
             /// <item>⠀⠀t⠀⠀⠀⠀.-         </item>
             /// <item>⠀⠀:⠀⠀⠀/           </item>
             /// <item>⠀⠀: _'            </item>
             /// <item>⠀⠀f 一一一 t     </item>
-            /// </c>
-            /// </list>
-            /// <br/> Note: <c> d = t - f </c>
-            /// </summary>
+            /// </c> </list>
+            /// <br/> <c> ƒ(𝑥) = ((-d•𝒄𝒐𝒔(π(𝑥 - f)/d)) + t + f) / 2 </c>
+            /// <br/> Note: <c> d = t - f </c> </summary>
             Smooth_FT,
-            //? t   ,.--
-            //? |  /
-            //? |/
-            //? f一一一t
-            /// <summary>
-            /// <list>
-            /// <c>
-            /// <item>⠀⠀t⠀⠀⠀⠀.-         </item>
-            /// <item>⠀⠀:⠀⠀⠀/           </item>
-            /// <item>⠀⠀: _'            </item>
-            /// <item>⠀⠀f 一一一 t     </item>
-            /// </c>
-            /// </list>
-            /// <br/> Note: <c> d = t - f </c>
-            /// </summary>
-            SmoothEnd_FT,
             //? t     /
             //? |    /
             //? | _.'
             //? f一一一t
-            /// <summary>
-            /// <list>
-            /// <c>
+            /// <summary> <list> <c>
             /// <item>⠀⠀⠀t⠀⠀⠀⠀⠀/     </item>
             /// <item>⠀⠀⠀|⠀⠀⠀⠀/      </item>
             /// <item>⠀⠀⠀|⠀_.'       </item>
             /// <item>⠀⠀⠀f 一一一 t       </item>
-            /// </c>
-            /// </list>
-            /// <br/> Note: <c> d = t - f </c>
-            /// </summary>
+            /// </c> </list>
+            /// <br/> <c> ƒ(𝑥) = -d•𝒄𝒐𝒔(π(x - f) / 2d) + t </c>
+            /// <br/> Note: <c> d = t - f </c> </summary>
             SmoothStart_FT,
+            //? t   ,.--
+            //? |  /
+            //? |/
+            //? f一一一t
+            /// <summary> <list> <c>
+            /// <item>⠀⠀⠀t⠀⠀,.--  </item>
+            /// <item>⠀⠀⠀|⠀/      </item>
+            /// <item>⠀⠀⠀|/        </item>
+            /// <item>⠀⠀⠀f一一一t  </item>
+            /// </c> </list>
+            /// <br/> <c> ƒ(𝑥) = d•𝒔𝒊𝒏(π(𝑥 - f)/2d) + f </c>
+            /// <br/> Note: <c> d = t - f </c> </summary>
+            SmoothEnd_FT,
 
             //? t    .--.
             //? |   /    \
             //? | _'      '_
             //? f一一一一一一t
-            /// <summary>
-            /// <list>
-            /// <c>
+            /// <summary> <list> <c>
             /// <item>⠀⠀⠀ t⠀⠀⠀  .--.    </item>
             /// <item>⠀⠀⠀ |⠀⠀ /⠀⠀⠀⠀\    </item>
             /// <item>⠀⠀⠀ | _'⠀⠀⠀⠀ ⠀'_   </item>
             /// <item>⠀⠀⠀ f 一一一一一一 t      </item>
-            /// </c>
-            /// </list>
-            /// <br/> Note: <c> d = t - f </c>
-            /// </summary>
+            /// </c> </list>
+            /// <br/> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c>
+            /// <br/> Note: <c> d = t - f </c> </summary>
             Smooth_FTF,
             //? t   ,.--.,
             //? |  /      \
             //? |/         \
             //? f一一一一一一t
-            /// <summary>
-            /// <list>
-            /// <c>
+            /// <summary> <list> <c>
             /// <item>⠀⠀⠀ t⠀⠀,.--., </item>
             /// <item>⠀⠀⠀ |⠀/⠀⠀⠀⠀⠀\ </item>
             /// <item>⠀⠀⠀ |/⠀⠀⠀⠀⠀⠀⠀\  </item>
             /// <item>⠀⠀⠀ f一一一一一一t      </item>
-            /// </c>
-            /// </list>
-            /// <br/> Note: <c> d = t - f </c>
-            /// </summary>
+            /// </c> </list>
+            /// <br/> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c>
+            /// <br/> Note: <c> d = t - f </c> </summary>
             SmoothMiddle_FTF
         }
 
@@ -136,16 +118,12 @@ namespace GalacticLib.Math.Numerics {
         //? | /
         //? f一一一t
 
-        /// <summary>
-        /// <list>
-        /// <c>
+        /// <summary> <list> <c>
         /// <item>⠀⠀⠀t⠀⠀⠀⠀⠀/  </item>
         /// <item>⠀⠀⠀:⠀⠀⠀/     </item>
         /// <item>⠀⠀⠀:⠀/       </item>
         /// <item>⠀⠀⠀f 一一一 t </item>
-        /// </c>
-        /// </list>
-        /// </summary>
+        /// </c> </list> </summary>
         /// <param name="x"> Input </param>
         /// <param name="from"> Starting boundary </param>
         /// <param name="to"> Ending boundary </param>
@@ -160,21 +138,17 @@ namespace GalacticLib.Math.Numerics {
         //? | _'
         //? f一一一t
 
-        /// <summary>
-        /// <list>
-        /// <c>
+        /// <summary> <list> <c>
         /// <item>⠀⠀t⠀⠀⠀⠀.-         </item>
         /// <item>⠀⠀:⠀⠀⠀/           </item>
         /// <item>⠀⠀: _'            </item>
         /// <item>⠀⠀f 一一一 t     </item>
-        /// </c>
-        /// </list>
-        /// <br/> Note: <c> d = t - f </c>
-        /// </summary>
+        /// </c> </list> </summary>
         /// <param name="x"> Input </param>
         /// <param name="from"> Starting boundary </param>
         /// <param name="to"> Ending boundary </param>
-        /// <returns> <c> ƒ(𝑥) = ((-d•𝒄𝒐𝒔(π(𝑥 - f)/d)) + t + f) / 2 </c> </returns>
+        /// <returns> <c> ƒ(𝑥) = ((-d•𝒄𝒐𝒔(π(𝑥 - f)/d)) + t + f) / 2 </c>
+        /// <br/> Note: <c> d = t - f </c> </returns>
         public static double Smooth_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
             double delta = to - from;
@@ -187,21 +161,17 @@ namespace GalacticLib.Math.Numerics {
         //? | _.'
         //? f一一一t
 
-        /// <summary>
-        /// <list>
-        /// <c>
+        /// <summary> <list> <c>
         /// <item>⠀⠀⠀t⠀⠀⠀⠀⠀/     </item>
         /// <item>⠀⠀⠀|⠀⠀⠀⠀/      </item>
         /// <item>⠀⠀⠀|⠀_.'       </item>
         /// <item>⠀⠀⠀f 一一一 t       </item>
-        /// </c>
-        /// </list>
-        /// <br/> Note: <c> d = t - f </c>
-        /// </summary>
+        /// </c> </list> </summary>
         /// <param name="x"> Input </param>
         /// <param name="from"> Starting boundary </param>
         /// <param name="to"> Ending boundary </param>
-        /// <returns> <c> ƒ(𝑥) = -d•𝒄𝒐𝒔(π(x - f) / 2d) + t </c> </returns>
+        /// <returns> <c> ƒ(𝑥) = -d•𝒄𝒐𝒔(π(x - f) / 2d) + t </c>
+        /// <br/> Note: <c> d = t - f </c> </returns>
         public static double SmoothStart_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
             double delta = to - from;
@@ -214,21 +184,17 @@ namespace GalacticLib.Math.Numerics {
         //? |/
         //? f一一一t
 
-        /// <summary>
-        /// <list>
-        /// <c>
+        /// <summary> <list> <c>
         /// <item>⠀⠀⠀t⠀⠀,.--  </item>
         /// <item>⠀⠀⠀|⠀/      </item>
         /// <item>⠀⠀⠀|/        </item>
         /// <item>⠀⠀⠀f一一一t  </item>
-        /// </c>
-        /// </list>
-        /// <br/> Note: <c> d = t - f </c>
-        /// </summary>
+        /// </c> </list> </summary>
         /// <param name="x"> Input </param>
         /// <param name="from"> Starting boundary </param>
         /// <param name="to"> Ending boundary </param>
-        /// <returns> <c> ƒ(𝑥) = d•𝒔𝒊𝒏(π(𝑥 - f)/2d) + f </c> </returns>
+        /// <returns> <c> ƒ(𝑥) = d•𝒔𝒊𝒏(π(𝑥 - f)/2d) + f </c>
+        /// <br/> Note: <c> d = t - f </c> </returns>
         public static double SmoothEnd_FT(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
             double delta = to - from;
@@ -241,22 +207,17 @@ namespace GalacticLib.Math.Numerics {
         //? | _'      '_
         //? f一一一一一一t
 
-        /// <summary>
-        /// <list>
-        /// <c>
+        /// <summary> <list> <c>
         /// <item>⠀⠀⠀ t⠀⠀⠀  .--.    </item>
         /// <item>⠀⠀⠀ |⠀⠀ /⠀⠀⠀⠀\    </item>
         /// <item>⠀⠀⠀ | _'⠀⠀⠀⠀ ⠀'_   </item>
         /// <item>⠀⠀⠀ f 一一一一一一 t      </item>
-        /// </c>
-        /// </list>
-        /// <br/> Note: <c> d = t - f </c>
-        /// </summary>
+        /// </c> </list> </summary>
         /// <param name="x"> Input </param>
         /// <param name="from"> Starting boundary </param>
         /// <param name="to"> Ending boundary </param>
-        /// <returns> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c></returns>
-
+        /// <returns> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c>
+        /// <br/> Note: <c> d = t - f </c> </returns>
         public static double Smooth_FTF(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
             double delta = to - from;
@@ -269,21 +230,17 @@ namespace GalacticLib.Math.Numerics {
         //? |/         \
         //? f一一一一一一t
 
-        /// <summary>
-        /// <list>
-        /// <c>
+        /// <summary> <list> <c>
         /// <item>⠀⠀⠀ t⠀⠀,.--., </item>
         /// <item>⠀⠀⠀ |⠀/⠀⠀⠀⠀⠀\ </item>
         /// <item>⠀⠀⠀ |/⠀⠀⠀⠀⠀⠀⠀\  </item>
         /// <item>⠀⠀⠀ f一一一一一一t      </item>
-        /// </c>
-        /// </list>
-        /// <br/> Note: <c> d = t - f </c>
-        /// </summary>
+        /// </c> </list> </summary>
         /// <param name="x"> Input </param>
         /// <param name="from"> Starting boundary </param>
         /// <param name="to"> Ending boundary </param>
-        /// <returns> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c></returns>
+        /// <returns> <c> ƒ(𝑥) = ( -d•𝒄𝒐𝒔(2π(𝑥 - f)/d) + t + f )/2 </c>
+        /// <br/> Note: <c> d = t - f </c> </returns>
         public static double SmoothMiddle_FTF(double x, double from, double to) {
             x = x.AtOrBetween(from, to); // force x between f一一一t
             double delta = to - from;
