@@ -1,39 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>GalacticLib.Math</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
-    <Title>GalacticLib (Math)</Title>
-	<Copyright>©2022 Galacticai</Copyright>
-    <PackageProjectUrl>https://github.com/Galacticai/GalacticLib.Math</PackageProjectUrl>
-    <PackageRepositoryUrl>https://github.com/Galacticai/GalacticLib.Math</PackageRepositoryUrl>
-    <PackageTags>Galacticai;GalacticLib;Lib;Library;Math;Mathematics;</PackageTags>
-    <NeutralLanguage>en-001</NeutralLanguage>
-	<Authors>Galacticai</Authors>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+        <RootNamespace>GalacticLib.Math</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+        <Title>GalacticLib (Math)</Title>
+    	<Copyright>©2022 Galacticai</Copyright>
+        <PackageProjectUrl>https://github.com/Galacticai/GalacticLib.Math</PackageProjectUrl>
+        <PackageRepositoryUrl>https://github.com/Galacticai/GalacticLib.Math</PackageRepositoryUrl>
+        <PackageTags>Galacticai;GalacticLib;Lib;Library;Math;Mathematics;</PackageTags>
+        <NeutralLanguage>en-001</NeutralLanguage>
+    	<Authors>Galacticai</Authors>
         <VersionPrefix>0.2.2.1</VersionPrefix>
         <AssemblyVersion>0.2.2.1</AssemblyVersion>
         <FileVersion>0.2.2.1</FileVersion>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <None Include="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Update="LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <None Update="LICENSE">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
 </Project>
