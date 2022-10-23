@@ -18,35 +18,100 @@ namespace GalacticLib.Math.Numerics {
             //? |   /
             //? | /
             //? f一一一t
+            /// <summary>
+            /// <list>
+            /// <c>
+            /// <item>⠀⠀⠀t⠀⠀⠀⠀⠀/  </item>
+            /// <item>⠀⠀⠀:⠀⠀⠀/     </item>
+            /// <item>⠀⠀⠀:⠀/       </item>
+            /// <item>⠀⠀⠀f 一一一 t </item>
+            /// </c>
+            /// </list>
+            /// </summary>
             Linear_FT,
             //? t    .-
             //? |   /
             //? | _-
             //? f一一一t
+            /// <summary>
+            /// <list>
+            /// <c>
+            /// <item>⠀⠀t⠀⠀⠀⠀.-         </item>
+            /// <item>⠀⠀:⠀⠀⠀/           </item>
+            /// <item>⠀⠀: _'            </item>
+            /// <item>⠀⠀f 一一一 t     </item>
+            /// </c>
+            /// </list>
+            /// <br/> Note: <c> d = t - f </c>
+            /// </summary>
             Smooth_FT,
             //? t   ,.--
             //? |  /
             //? |/
             //? f一一一t
+            /// <summary>
+            /// <list>
+            /// <c>
+            /// <item>⠀⠀t⠀⠀⠀⠀.-         </item>
+            /// <item>⠀⠀:⠀⠀⠀/           </item>
+            /// <item>⠀⠀: _'            </item>
+            /// <item>⠀⠀f 一一一 t     </item>
+            /// </c>
+            /// </list>
+            /// <br/> Note: <c> d = t - f </c>
+            /// </summary>
             SmoothEnd_FT,
             //? t     /
             //? |    /
             //? | _.'
             //? f一一一t
+            /// <summary>
+            /// <list>
+            /// <c>
+            /// <item>⠀⠀⠀t⠀⠀⠀⠀⠀/     </item>
+            /// <item>⠀⠀⠀|⠀⠀⠀⠀/      </item>
+            /// <item>⠀⠀⠀|⠀_.'       </item>
+            /// <item>⠀⠀⠀f 一一一 t       </item>
+            /// </c>
+            /// </list>
+            /// <br/> Note: <c> d = t - f </c>
+            /// </summary>
             SmoothStart_FT,
 
             //? t    .--.
             //? |   /    \
             //? | _'      '_
             //? f一一一一一一t
+            /// <summary>
+            /// <list>
+            /// <c>
+            /// <item>⠀⠀⠀ t⠀⠀⠀  .--.    </item>
+            /// <item>⠀⠀⠀ |⠀⠀ /⠀⠀⠀⠀\    </item>
+            /// <item>⠀⠀⠀ | _'⠀⠀⠀⠀ ⠀'_   </item>
+            /// <item>⠀⠀⠀ f 一一一一一一 t      </item>
+            /// </c>
+            /// </list>
+            /// <br/> Note: <c> d = t - f </c>
+            /// </summary>
             Smooth_FTF,
             //? t   ,.--.,
             //? |  /      \
             //? |/         \
             //? f一一一一一一t
+            /// <summary>
+            /// <list>
+            /// <c>
+            /// <item>⠀⠀⠀ t⠀⠀,.--., </item>
+            /// <item>⠀⠀⠀ |⠀/⠀⠀⠀⠀⠀\ </item>
+            /// <item>⠀⠀⠀ |/⠀⠀⠀⠀⠀⠀⠀\  </item>
+            /// <item>⠀⠀⠀ f一一一一一一t      </item>
+            /// </c>
+            /// </list>
+            /// <br/> Note: <c> d = t - f </c>
+            /// </summary>
             SmoothMiddle_FTF
-
         }
+
         /// <summary> Run the target <see cref="FunctionName"/> to find ƒ(<paramref name="x"/>) </summary>
         /// <param name="function"> Target <see cref="FunctionName"/> </param>
         /// <param name="x"> Input </param>
