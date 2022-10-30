@@ -37,4 +37,9 @@
         </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="GalacticLib.Math.Numerics" Version="1.0.0" />
+      <PackageReference Include="GalacticLib.Math.Space" Version="0.2.1" />
+    </ItemGroup>
+
 </Project>
